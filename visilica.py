@@ -42,7 +42,7 @@ getch = _Getch()
 #Окончание описания классов для ввода одного символа
 
 def letter_check(letter, cheched_word):
-    #проверяет есть буква ли она в слове
+    #проверяет есть буква в слове
     #Если есть возврашает True и список с номерами вхождений
     #Если нет возвращает False
     indexis = []
@@ -86,4 +86,5 @@ def game_visilica(checked_word):
             return 'Поздравляем, Вы победили, загаданное слово {}!'.format(checked_word)
     return 'Все попытки изчерпаны, это поражение'
 
-print(game_visilica(task))
+if __name__ == "__main__":
+    print(game_visilica(task))
